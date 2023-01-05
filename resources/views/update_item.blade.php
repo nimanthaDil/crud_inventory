@@ -48,8 +48,8 @@ input[type=submit]:hover {
       <option value="4">Other</option>
     </select>
 
-    <label for="item_name"">Item name</label>
-    <input type="text" id="item_name" name="item_name" placeholder="Enter Item name">
+    <label for="item_name">Item name</label>
+    <input type="text" id="item_name" value="{{ $item->item_id }}" name="item_name" placeholder="Enter Item name">
 
     <label for="sku">SKU</label>
     <input type="text" id="sku" name="sku" placeholder="Enter a unique identifier for the item">

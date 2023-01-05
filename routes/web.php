@@ -61,8 +61,8 @@ Route::post('create_item','App\Http\Controllers\ItemInsertController@insert');
 
 Route::get('view_item','App\Http\Controllers\ItemViewController@index');
 
-Route::get('insert','App\Http\Controllers\ItemUpdateController@updateform');
-Route::post('update_item','App\Http\Controllers\ItemUpdateController@update');
+//Route::get('insert','App\Http\Controllers\ItemUpdateController@updateform');
+Route::get('update_item/{id}','App\Http\Controllers\ItemUpdateController@updateform');
 
 //Route::get('delete-records','App\Http\Controllers\ItemDeleteController@index');
 Route::get('delete/{id}','App\Http\Controllers\ItemDeleteController@destroy');
